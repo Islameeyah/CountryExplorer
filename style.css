@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  .main__container {
+    font-family: system-ui;
+    color: #555;
+  }
+  
+  .container {
+    width: 100%;
+    background: palevioletred;
+
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .search {
+    background-color: #fff;
+    width: 40%;
+    padding: 10px;
+    border-radius: 50px;
+
+  }
+  
+.search__field {
+    width: 85%;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+
+.fa{
+    font-size: 20px !important;
+    border-left: 1px solid grey;
+}
+   button {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+  }
+ 
+  #continents__lists{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+  }
+
+  li{
+    color: brown;
+    font-size: 15px;
+    list-style: none;
+    padding: 15px 20px ;
+    font: bold;
+    cursor: pointer;
+    color: white;
+
+
+  }
+  .country__list {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 10px;
+    place-items: center;
+    margin-top: 50px;
+
+  }
+  .country__list > div{
+    border:  5px ridge black;
+  }
+
+  .country__list  p{
+    font-size: 20px;
+    color: orangered;
+    font-weight: bold;
+  }
+
+  .spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .spinner p{
+    display: none;
+    font-size: 30px;
+  }
+
+  #map {
+    width: 70rem;
+    height: 43rem;
+    
+  }
+ 
+   .countries { 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: opacity 1s;
+   }
+ 
+
+  .country {
+    background-color: #fff;
+    box-shadow: 0 28px 70px 14px rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    width: 30rem;
+    border-radius: 0.7rem;
+   }
+
+  
+  .country__img {
+    width: 30rem;
+    height: 17rem;
+    object-fit: cover;
+    background-color: #eee;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+  }
+  
+  .country__data {
+    padding: 2.5rem 3.75rem 3rem 3.75rem;
+  }
+  
+  .country__name {
+    font-size: 2.7rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .country__region {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: #888;
+  }
+  
+  .country__row:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  
+  .country__row span {
+    display: inline-block;
+    margin-right: 2rem;
+    font-size: 2.4rem;
+  }
+  
+  

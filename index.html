@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Interactive Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <div class="main__container">
+        <div class="container">
+            <header class="header">
+                <form class="search">
+                    <input type="text" class="search__field" placeholder="search country..." >
+                    <button id="btnSearch" class="fa fa-search"></button>
+                </form> 
+
+                <div id="continents__lists"></div> 
+
+            </header>
+        </div>
+
+        <div class="country__list"></div>
+        
+        <div class="spinner">
+            <p>Loading:::::::::</p>
+        </div>
+        
+        <div class="countries">  
+              
+            <!-- <article class="country"> -->
+                <!-- <img class="country__img" src="" />
+                <div class="country__data">
+                    <h3 class="country__name">COUNTRY</h3>
+                    <h4 class="country__region">REGION</h4>
+                    <p class="country__row"><span>👫</span>POP people</p>
+                    <p class="country__row"><span>🗣️</span>LANG</p>
+                    <p class="country__row"><span>💰</span>CUR</p>
+                </div> -->
+            <!-- </article>   -->
+    
+            <!-- <div id="map"></div> -->
+        </div>  
+
+    </div>
+    <!-- <script src="script.js"></script> -->
+   
+</body>
+</html>
